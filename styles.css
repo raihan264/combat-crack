@@ -1,0 +1,24 @@
+/* Tombol tersembunyi di pojok kanan bawah */
+#toggleButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 123, 255, 0.3); /* Transparan biru */
+    color: white;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 123, 255, 0.6); /* Border transparan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000;
+    transition: background-color 0.3s, border-color 0.3s; /* Transisi halus */
+}
+
+#toggleButton:active {
+    background-color: rgba(0, 123, 255, 0.6); /* Lebih gelap saat ditekan */
+    border-color: rgba(0, 123, 255, 1); /* Border lebih gelap saat ditekan */
+}
+￼Enter
